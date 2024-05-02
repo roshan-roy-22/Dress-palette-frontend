@@ -10,7 +10,7 @@ const NewCollection = () => {
   const [newCollection,setNewCollections]=useState([])
 
   useEffect(() => {
-    fetch("http://localhost:3000/new-collections").then((response)=>response.json()).then((data)=>setNewCollections(data))
+    fetch("https://dress-palette-backend-1.onrender.com/new-collections").then((response)=>response.json()).then((data)=>setNewCollections(data))
   }, [])
   
 

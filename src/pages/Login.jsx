@@ -16,7 +16,7 @@ const Login = () => {
     const login=async()=>{
       console.log(formData);
       let responseData;
-      await fetch('http://localhost:3000/login',{
+      await fetch('https://dress-palette-backend-1.onrender.com/login',{
         method:"POST",
         headers:{
           Accept:'application/formData',
@@ -36,7 +36,7 @@ const Login = () => {
     const signup=async()=>{
       console.log(formData);
       let responseData;
-      await fetch('http://localhost:3000/signup',{
+      await fetch('https://dress-palette-backend-1.onrender.com/signup',{
         method:"POST",
         headers:{
           Accept:'application/formData',
